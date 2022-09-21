@@ -7,20 +7,19 @@ import { Footer } from '../components/Footer';
 
 const Contact: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>The Crites Firm</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <Header />
-        THIS IS THE CONTACT PAGE
-        <Footer />
-      </main>
-    </div>
+      <Header />
+      <section className={styles.contactContent}>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScF4E7z7Iuisa4dHRRHo2UaoVg5AUYaAIDa27V6Yv0JnFknZA/viewform?embedded=true" width="640" height="830" frameBorder="0" marginHeight={0} marginWidth={0}>Loading Contact Form</iframe>
+      </section>
+      <Footer />
+    </>
   )
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import siteLogo from './crites-firm-logo.svg';
+import siteLogo from '../assets/images/crites-firm-logo-transparent.svg';
 import styles from '../styles/Home.module.css'
 
 export function Header() {
