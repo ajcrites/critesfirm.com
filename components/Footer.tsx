@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from '../styles/Home.module.css'
 
 export function Footer() {
   return (
-    <footer className="site-footer">
+    <footer className={styles.siteFooter}>
       <p>
         Copyright &copy; 2022 - The Crites Firm
       </p>

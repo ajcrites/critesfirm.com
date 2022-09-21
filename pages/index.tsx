@@ -7,7 +7,7 @@ import { Footer } from '../components/Footer';
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>The Crites Firm</title>
         <meta charSet="utf-8" />
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main>
         <Header />
         <Footer />
       </main>
