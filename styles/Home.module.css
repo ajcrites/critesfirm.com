@@ -1,11 +1,11 @@
 .siteHeader, .siteFooter {
-  background-color: rgb(19, 45, 248);
+  background-color: white;
 }
 .siteHeader {
   display: flex;
 }
 .siteHeader a {
-  color: #dddddd;
+  color: rgb(19, 45, 248);
   align-self: center;
   margin-right: 35px;
 }
@@ -16,7 +16,7 @@
 .siteFooter {
   display: flex;
   padding: 15px;
-  color: #dddddd;
+  color: rgb(19, 45, 248);
   align-items: center;
 }
 .siteFooter address {
@@ -24,14 +24,16 @@
   margin-right: 35px;
 }
 .siteFooter address a {
-  color: #dddddd;
+  color: rgb(19, 45, 248);
 }
 
-.content, .contactContent {
-  background: linear-gradient(0deg, rgba(19, 45, 248, 0.6), rgba(19, 45, 248, 0.6)), url('../assets/images/atlanta-georgia-at-night.jpeg');
+.homePageContent {
+  background: linear-gradient(0deg, rgba(95, 106, 246, 0.6), rgba(95, 106, 246, 0.6)), url('../assets/images/group-bg-pic.jpg');
   background-size: cover;
-  min-height: calc(100vh - 220px);
+  background-position: 0 -200px;
+  min-height: calc(100vh - 290px);
 }
+
 
 .contactContent {
   text-align: center;
@@ -49,4 +51,68 @@
 .schedule a {
   color: #dddddd;
   font-size: 35px;
+}
+
+.siteNavContainer {
+  background-color: #183658;
+  color: white;
+}
+
+.siteNav {
+  display: flex;
+  margin: 0;
+}
+
+.siteNavLink {
+  list-style-type: none;
+  margin-right: 50px;
+}
+
+.siteNavLink a {
+  text-decoration: none;
+  padding: 25px 5px 25px 5px;
+  display: block;
+  transition-duration: .4s;
+}
+
+.siteNavLink a:hover {
+  background-color: white;
+  color: #183658;
+}
+
+.teamList {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-areas:
+    "image name"
+    "image bio"
+    "image link";
+  margin-bottom: 20px;
+  grid-template-rows: 0fr 1fr 1fr;
+  align-items: center;
+  gap: 0 25px;
+}
+
+.teamListImage {
+  grid-area: image;
+  align-self: start;
+}
+
+.teamListHeader {
+  grid-area: name;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.teamListBio {
+  grid-area: bio;
+  margin: 0;
+}
+
+.teamListLink {
+  grid-area: link;
+}
+
+.teamList {
+  list-style-type: none;
 }

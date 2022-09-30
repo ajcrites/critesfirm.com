@@ -3,8 +3,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: rgb(19, 45, 248);
-  color: #eee;
+  background-color: white;
+  color: rgb(19, 45, 248);
 }
 
 a {
