@@ -11,7 +11,11 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 if (process.env.NEXT_PUBLIC_HAS_ANALYTICS) {
-  isSupported().then(() => getAnalytics(app));
+  (async () => {
+    if (await isSupported()) {
+      getAnalytics(app);
+    }
+  })();
 }
 
 function MyApp({ Component, pageProps }: AppProps) {
