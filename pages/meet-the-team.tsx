@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <Header />
 
         <section>
-          <h1>
+          <h1 className={styles.pageTitle}>
             Meet The Team
           </h1>
 

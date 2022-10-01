@@ -6,11 +6,11 @@ import styles from '../../styles/Home.module.css'
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 
-import { teamData, TeamData } from '../../components/team/team-data';
+import { practiceAreasData, PracticeAreasData } from '../../components/practice-areas/practice-areas-data';
 
 export const getStaticPaths: GetStaticPaths = () => (
   {
-    paths: teamData.map(({ id }) => ({
+    paths: practiceAreasData.map(({ id }) => ({
       params: { id }
     })),
     fallback: false,
@@ -18,26 +18,28 @@ export const getStaticPaths: GetStaticPaths = () => (
 );
 
 export const getStaticProps: GetStaticProps = ({ params: { id: teamMemberId } = {} }) => ({
-  props: teamData.find(({ id }) => id === teamMemberId) || {},
+  props: practiceAreasData.find(({ id }) => id === teamMemberId) || {},
 });
 
-const Bio: NextPage<TeamData> = ({ name, image, bio } ) => {
+const Bio: NextPage<PracticeAreasData> = ({ title, contents } ) => {
   return (
     <>
       <Head>
-        <title>{name}</title>
+        <title>The Crites Firm Practice Areas - {title}</title>
       </Head>
 
       <main>
         <Header />
 
         <section>
-          <h1 className={styles.pageTitle}>{name}</h1>
+          <h1 className={styles.pageTitle}>{title}</h1>
 
           <article className={styles.bioContents}>
-            <Image src={image} alt={`${name}'s bio pic`} width="200" height="250" />
-
-            {bio.map((paragraph, idx) => <p key={idx}>{paragraph}</p>)}
+          {contents.map((content, idx) =>
+            <p key={idx}>
+              {content}
+            </p>
+          )}
           </article>
         </section>
 

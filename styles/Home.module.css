@@ -18,6 +18,7 @@
   padding: 15px;
   color: rgb(19, 45, 248);
   align-items: center;
+  border-top: 1px solid black;
 }
 .siteFooter address {
   margin-left: auto;
@@ -28,10 +29,17 @@
 }
 
 .homePageContent {
-  background: linear-gradient(0deg, rgba(95, 106, 246, 0.6), rgba(95, 106, 246, 0.6)), url('../assets/images/group-bg-pic.jpg');
+  background: url('../assets/images/group-bg-pic.jpg');
   background-size: cover;
-  background-position: 0 -200px;
+  background-position: 0 -100px;
   min-height: calc(100vh - 290px);
+  text-shadow: 2px 2px black;
+}
+
+@media (max-width: 1200px) {
+ .homePageContent {
+  background-position: 0;
+ }
 }
 
 
@@ -42,7 +50,7 @@
 .info {
   padding: 45px;
   margin: 0;
-  font-size: 60px;
+  font-size: 3.2vw;
 }
 
 .schedule {
@@ -50,7 +58,7 @@
 }
 .schedule a {
   color: #dddddd;
-  font-size: 35px;
+  font-size: 2.3vw;
 }
 
 .siteNavContainer {
@@ -115,4 +123,18 @@
 
 .teamList {
   list-style-type: none;
+}
+
+.bioContents {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.pageTitle {
+  text-align: center;
+  text-shadow: 1px 1px #444;
+  background-color: #265a94;
+  margin-top: 0;
+  padding: 20px 0 20px 0;
+  color: #D2602D;
 }
