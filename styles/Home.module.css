@@ -36,19 +36,13 @@
   text-shadow: 2px 2px black;
 }
 
-@media (max-width: 1200px) {
- .homePageContent {
-  background-position: 0;
- }
-}
-
-
 .contactContent {
   text-align: center;
 }
 
 .info {
-  padding: 45px;
+  text-align: center;
+  padding: 45px 5px 25px 5px;
   margin: 0;
   font-size: 3.2vw;
   color: #eee;
@@ -57,9 +51,31 @@
 .schedule {
   text-align: center;
 }
+
 .schedule a {
   color: #dddddd;
   font-size: 2.3vw;
+}
+
+@media (max-width: 1200px) {
+  .homePageContent {
+    background-position: 0;
+  }
+
+  .info {
+    padding: 25px 5px 25px 5px;
+    font-size: 5vw;
+  }
+
+  .schedule a {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .homePageContent {
+    background-position: -120px 0;
+  }
 }
 
 .siteNavContainer {
