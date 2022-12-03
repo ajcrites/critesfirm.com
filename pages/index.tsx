@@ -9,7 +9,8 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>The Crites Firm</title>
+        <title>The Crites Firm - Atlanta Family Law Attorneys</title>
+        <meta name="description" content="Our talented Atlanta Divorce & Family Law Litigation attorneys handle divorce, custody, paternity, prenuptial agreements, contempt, modification & more. Schedule your easy video consultation today." />
       </Head>
 
       <main>

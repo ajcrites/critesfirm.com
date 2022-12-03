@@ -12,7 +12,8 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Meet The Crites Firm Team</title>
+        <title>The Crites Firm - Experienced Atlanta Family Law Attorneys</title>
+        <meta name="description" content="Our experienced Atlanta family law attorneys are available to assist you in understanding your rights and choices when it comes to all aspects of your case." />
       </Head>
 
       <main>

@@ -9,7 +9,8 @@ const Contact: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Contact Us</title>
+        <title>Title: The Crites Firm - Atlanta Family Law Attorneys</title>
+        <meta name="description" content="We are experienced family law attorneys serving Atlanta and the metro area. Call today or schedule an appointment online to get started." />
       </Head>
 
       <Header />

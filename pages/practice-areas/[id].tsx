@@ -21,21 +21,22 @@ export const getStaticProps: GetStaticProps = ({ params: { id: teamMemberId } = 
   props: practiceAreasData.find(({ id }) => id === teamMemberId) || {},
 });
 
-const Bio: NextPage<PracticeAreasData> = ({ title, contents, image } ) => {
+const Bio: NextPage<PracticeAreasData> = ({ pageTitle, metaTitle, contents, description, image } ) => {
   return (
     <>
       <Head>
-        <title>{`The Crites Firm Practice Areas - ${title}`}</title>
+        <title>{metaTitle}</title>
+        <meta name="description" content="{description}" />
       </Head>
 
       <main>
         <Header />
 
         <section>
-          <h1 className={styles.pageTitle}>{title}</h1>
+          <h1 className={styles.pageTitle}>{pageTitle}</h1>
 
           <article className={styles.bioContents}>
-            <Image src={image} alt={`${title}`} />
+            <Image src={image} alt={`${pageTitle}`} />
             {contents.map((content, idx) =>
               <p key={idx}>
                 {content}
