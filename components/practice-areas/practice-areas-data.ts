@@ -1,11 +1,11 @@
-import divorce from '../../assets/images/practice-areas/divorce.jpg';
-import legitimation from '../../assets/images/practice-areas/legitimation.jpg';
-import childSupport from '../../assets/images/practice-areas/child-support.jpg';
-import modification from '../../assets/images/practice-areas/modification.jpg';
-import estatePlanning from '../../assets/images/practice-areas/estate-planning.jpg';
-import enforcement from '../../assets/images/practice-areas/enforcement.jpg';
-import childCustody from '../../assets/images/practice-areas/child-custody.jpg';
-import appeals from '../../assets/images/practice-areas/appeals.jpg';
+import divorce from '../../assets/images/practice-areas/divorce.webp';
+import legitimation from '../../assets/images/practice-areas/legitimation.webp';
+import childSupport from '../../assets/images/practice-areas/child-support.webp';
+import modification from '../../assets/images/practice-areas/modification.webp';
+import estatePlanning from '../../assets/images/practice-areas/estate-planning.webp';
+import enforcement from '../../assets/images/practice-areas/enforcement.webp';
+import childCustody from '../../assets/images/practice-areas/child-custody.webp';
+import appeals from '../../assets/images/practice-areas/appeals.webp';
 
 interface StaticImageData {
    src: string;
@@ -31,7 +31,11 @@ export const practiceAreasData: PracticeAreasData[] = [
     image: divorce,
     description: 'The experienced family law and divorce lawyers at The Crites Firm provide intelligent, compassionate, and aggressive representation for metro Atlanta.',
     contents: [
-      'We represent men and women in divorce actions, either contested or uncontested. We have experience litigating complex divorces with issues such as equitable division of assets whose value is difficult to ascertain, complex trust litigation, and contentious child custody action. While it is possible to do a divorce yourself, it is always advisable to seek an attorney to, at a minimum, review your documents before you agree to anything. There are complicated laws involving what can and cannot be done in divorces, and a skilled attorney will help you navigate these things. If you have any doubts, or if you are simply seeking some guidance, schedule a consultation today.'
+      'When selecting a divorce attorney, the best divorce attorney for you is one that isn’t afraid of the courtroom, the opposing party, or YOU. Indeed, we have seen a lot of money wasted on fees because the litigant’s attorney was too scared to manage client expectations and give client’s a view on the likely results. We have also experienced great success by simply being unafraid to litigate a case in court. ',
+
+      'We represent men and women in divorce actions from various walks of life, in actions that are either contested or uncontested. We have experience in different kinds of divorces, servicing our LGBTQ community, military community, members of the entertainment industry, and all others. Our team is highly experienced litigating complex divorces with issues such as equitable division of assets whose value is difficult to ascertain, complex trust litigation, and contentious child custody actions. The key to successfully litigating your divorce is having an attorney who understands how to value your marital estate, work with Guardians ad litem and child custody evaluators, and advise their client appropriately.',
+
+      'While it is possible to do a divorce yourself, it is always advisable to seek an attorney to, at a minimum, review your documents before you agree to anything. Even if you are filing an uncontested divorce in Georgia, an attorney can still help you to ensure your pleadings meet certain statutory requirements because filing for divorce in Georgia requires that certain information be pled in order for the Court to consider your petition. Additionally, there are complicated laws involving what can and cannot be done in divorces, and a skilled attorney will help you navigate these issues. If you have any doubts, or if you are simply seeking some guidance, schedule a consultation today.',
     ],
   },
   {

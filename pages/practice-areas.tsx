@@ -24,9 +24,9 @@ const Home: NextPage = () => {
           </h1>
 
           <article className={styles.bioContents}>
-            {practiceAreasData.map(({ id, title }) =>
+            {practiceAreasData.map(({ id, pageTitle }) =>
               <Link href={`/practice-areas/${id}`} key={id}>
-                <a><h2>{title}</h2></a>
+                <a><h2>{pageTitle}</h2></a>
               </Link>
             )}
           </article>

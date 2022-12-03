@@ -1,7 +1,7 @@
-import nicoleImage from '../../assets/images/team/nicole.jpg';
-import brandyImage from '../../assets/images/team/brandy.jpg';
-import diamondImage from '../../assets/images/team/diamond.jpg';
-import summerImage from '../../assets/images/team/summer.jpg';
+import nicoleImage from '../../assets/images/team/nicole.webp';
+import brandyImage from '../../assets/images/team/brandy.webp';
+import diamondImage from '../../assets/images/team/diamond.webp';
+import summerImage from '../../assets/images/team/summer.webp';
 
 interface StaticImageData {
    src: string;

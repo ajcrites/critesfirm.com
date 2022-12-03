@@ -29,7 +29,7 @@
 }
 
 .homePageContent {
-  background: url('../assets/images/group-bg-pic.jpg');
+  background: url('../assets/images/group-bg-pic.webp');
   background-size: cover;
   background-position: 0 -100px;
   min-height: calc(100vh - 290px);
@@ -145,6 +145,7 @@
 .bioContents {
   margin-left: 50px;
   margin-right: 50px;
+  overflow: hidden;
 }
 
 .pageTitle {

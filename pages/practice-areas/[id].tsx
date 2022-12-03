@@ -36,7 +36,9 @@ const Bio: NextPage<PracticeAreasData> = ({ pageTitle, metaTitle, contents, desc
           <h1 className={styles.pageTitle}>{pageTitle}</h1>
 
           <article className={styles.bioContents}>
-            <Image src={image} alt={`${pageTitle}`} />
+            <div style={{float: 'left', margin: '5px 10px 0 0', }}>
+              <Image src={image} alt={pageTitle} width={200} height={200} />
+            </div>
             {contents.map((content, idx) =>
               <p key={idx}>
                 {content}
