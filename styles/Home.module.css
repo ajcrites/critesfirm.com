@@ -118,6 +118,7 @@
   gap: 0 25px;
 }
 
+
 .teamListImage {
   grid-area: image;
   align-self: start;
@@ -132,6 +133,7 @@
 .teamListBio {
   grid-area: bio;
   margin: 0;
+  height: auto;
 }
 
 .teamListLink {
@@ -155,4 +157,28 @@
   margin-top: 0;
   padding: 20px 0 20px 0;
   color: #D2602D;
+}
+
+@media screen and (max-width: 450px) {
+  .teamListContainer {
+    margin-right: 1em;
+  }
+
+  .teamList {
+    grid-template-areas:
+      "image"
+      "name"
+      "bio"
+      "link";
+    grid-template-rows: 1fr 0fr 1fr 0fr;
+    margin-bottom: 50px;
+  }
+
+  .teamListHeader {
+    margin-top: 5px;
+  }
+
+  .teamListImage {
+    text-align: center;
+  }
 }

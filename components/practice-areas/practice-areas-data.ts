@@ -29,7 +29,7 @@ export const practiceAreasData: PracticeAreasData[] = [
     pageTitle: 'Divorce',
     metaTitle: 'The Crites Firm - Atlanta Divorce Attorneys',
     image: divorce,
-    description: 'The experienced family law and divorce lawyers at The Crites Firm provide intelligent, compassionate, and aggressive representation for metro Atlanta.',
+    description: 'The experienced family law and divorce lawyers at The Crites Firm provide intelligent, compassionate, and aggressive representation for metro Atlanta. We handle narcissistic divorce',
     contents: [
       'When selecting a divorce attorney, the best divorce attorney for you is one that isn’t afraid of the courtroom, the opposing party, or YOU. Indeed, we have seen a lot of money wasted on fees because the litigant’s attorney was too scared to manage client expectations and give client’s a view on the likely results. We have also experienced great success by simply being unafraid to litigate a case in court. ',
 
