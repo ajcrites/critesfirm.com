@@ -26,7 +26,7 @@ export function Header() {
         <Link href="/">
           <a><Image src={siteLogo} width="300" height="120" alt="The Crites Firm" /></a>
         </Link>
-        <a href="tel:770-628-7147,7147">Call us now! 770-628-7147 ext. 7147</a>
+        <a href="tel:770-628-7147">Call us now! 770-628-7147</a>
       </header>
 
       <nav className={styles.siteNavContainer}>

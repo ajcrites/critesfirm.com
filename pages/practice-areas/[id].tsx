@@ -1,6 +1,7 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image';
+import { sanitize } from 'isomorphic-dompurify';
 
 import styles from '../../styles/Home.module.css'
 import { Header } from '../../components/Header';
@@ -35,15 +36,17 @@ const Bio: NextPage<PracticeAreasData> = ({ pageTitle, metaTitle, contents, desc
         <section>
           <h1 className={styles.pageTitle}>{pageTitle}</h1>
 
-          <article className={styles.bioContents}>
-            <div style={{float: 'left', margin: '5px 10px 0 0', }}>
-              <Image src={image} alt={pageTitle} width={200} height={200} />
-            </div>
-            {contents.map((content, idx) =>
-              <p key={idx}>
-                {content}
-              </p>
-            )}
+          <article className={styles.practiceContents}>
+            { image ? (
+              <div style={{float: 'left', margin: '5px 10px 0 0', }}>
+                <Image src={image} alt={pageTitle} width={image.width} height={image.height} />
+              </div>
+            ) : '' }
+            {contents.map((content, idx) => (
+              <p key={idx} dangerouslySetInnerHTML={{
+                __html: sanitize(content, { ALLOWED_TAGS: ['b', 'a'], ADD_ATTR: ['target'] })
+              }}></p>
+            ))}
           </article>
         </section>
 

@@ -144,10 +144,14 @@
   list-style-type: none;
 }
 
-.bioContents {
+.bioContents, .practiceContents {
   margin-left: 50px;
   margin-right: 50px;
   overflow: hidden;
+}
+
+.bioContents h2 {
+  font-weight: normal;
 }
 
 .pageTitle {
@@ -181,4 +185,9 @@
   .teamListImage {
     text-align: center;
   }
+}
+
+.practiceContents a {
+  text-decoration: underline;
+  color: rgb(19, 45, 248);
 }
