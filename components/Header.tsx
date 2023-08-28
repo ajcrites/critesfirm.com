@@ -15,6 +15,10 @@ export function Header() {
       text: 'Meet The Team'
     },
     {
+      link: '/blog/divorcing-a-narcissist',
+      text: 'Blog'
+    },
+    {
       link: '/contact',
       text: 'Contact Us'
     },

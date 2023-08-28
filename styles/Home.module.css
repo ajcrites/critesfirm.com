@@ -144,7 +144,7 @@
   list-style-type: none;
 }
 
-.bioContents, .practiceContents {
+.bioContents, .practiceContents, .blogContents {
   margin-left: 50px;
   margin-right: 50px;
   overflow: hidden;
@@ -187,7 +187,7 @@
   }
 }
 
-.practiceContents a {
+.practiceContents a, .blogContents a {
   text-decoration: underline;
   color: rgb(19, 45, 248);
 }
